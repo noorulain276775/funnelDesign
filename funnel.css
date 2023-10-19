@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+#outerContainer {
+  display: flex;
+}
+
+#navbar {
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+  border: 1px solid black;
+  margin-bottom: 52px;
+  margin-top: 0px;
+}
+
+#navbarAndFunnel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+#sidebar {
+  width: 300px;
+  height: 1000px;
+  background: #001549;
+}
+
+#background {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-image: url("/images/BG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 95%;
+  margin: auto;
+  border-radius: 15px;
+  padding: 48px 16px;
+}
+
+
+#firstHeadingMainDiv {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 19px;
+}
+#weeklyReport {
+  color: var(--white-100, #fff);
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+#weeklyReportDesc {
+  color: var(--white-100, #fff);
+  font-family: Outfit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.108px;
+}
+
+#weeklyDiv {
+  gap: 14px;
+}
+
+#funnelFirstContainer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#FunnelMainContainer {
+  display: flex;
+  background-image: url("/images/funnel.png");
+  background-size: cover;
+  background-position: center;
+  height: 680px;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 15px;
+  justify-content: space-between;
+  border-radius: 21px;
+  gap: 1%
+}
+
+/* Parents div of every individual ellipse */
+#parentEllipseFirst {
+  position: relative;
+  height: 180px;
+  width: 100%;
+}
+
+/* THis is the ellipse only */
+#funnelfirstEllipse {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width:1900px) {
+  #funnelfirstEllipse {
+    top: -40;
+  }
+}
+
+/* 
+parent div have all the ellipses */
+#funnelEllipses {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1%;
+  overflow-x: hidden;
+}
+
+/* leads content */
+#funnelFirstEllipseContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 14.294px;
+  background: rgba(253, 253, 253, 0.1);
+  backdrop-filter: blur(44.66811752319336px);
+  height: 95px;
+  z-index: 2;
+}
+
+
+#funnelSecondEllipseContent {
+  position: relative;
+  border-radius: 14.294px;
+  background: rgba(253, 253, 253, 0.1);
+  backdrop-filter: blur(44.66811752319336px);
+  height: 95px;
+  z-index: 2;
+}
+
+#funnelThirdEllipseContent {
+  position: relative;
+  border-radius: 14.294px;
+  background: rgba(253, 253, 253, 0.1);
+  backdrop-filter: blur(44.66811752319336px);
+  height: 95px;
+  z-index: 2;
+}
+#funnelFourthEllipseContent {
+  position: relative;
+  border-radius: 14.294px;
+  background: rgba(253, 253, 253, 0.1);
+  backdrop-filter: blur(44.66811752319336px);
+  height: 95px;
+  z-index: 2;
+}
+
+#funnelFifthEllipseContent {
+  position: relative;
+  border-radius: 14.294px;
+  background: rgba(253, 253, 253, 0.1);
+  backdrop-filter: blur(44.66811752319336px);
+  height: 95px;
+  z-index: 2;
+}
+
+#leads {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 16px;
+}
+
+#leadsHeading {
+  color: var(--white-100, #fff);
+  font-family: Outfit;
+  font-size: 11.614px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25.014px; /* 215.385% */
+}
+
+#leadsNumber {
+  color: var(--white-100, #fff);
+  font-family: Outfit;
+  font-size: 21.441px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17.867px; /* 83.333% */
+}
+@media only screen and (min-width: 1300px) and (max-width: 1800px) {
+  #leadsNumber {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+  #leadsNumber {
+    font-size: 17px;
+  }
+}
+
+#leadsNumberTwo {
+  color: var(--white-100, #fff);
+  font-family: Outfit;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17.867px; /* 83.333% */
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1800px) {
+  #leadsNumberTwo {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+  #leadsNumberTwo {
+    font-size: 15px;
+  }
+}
+
+#leadingPercentage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1.936px;
+  background: #10b981;
+  width: 33px;
+  height: 14px;
+  padding: 0px 3px;
+}
+
+#arrowimage {
+  width: 8px;
+  height: 8px;
+}
+
+#topLeadHeading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#images{
+  margin-top: -80px;
+}
+
+#arrowNumber {
+  color: var(--white-100, #fff);
+  font-family: Outfit;
+  font-size: 8.212px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16.423px; /* 200% */
+  letter-spacing: -0.074px;
+}
+
+#leadsNumberDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mainFunnel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+
+#dataBelowDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+#databack1 {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-items: center;
+  background-image: url("/images/back-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+}
+
+#databack2 {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-items: center;
+  background-image: url("/images/back-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+}
+
+#databack3 {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-items: center;
+  background-image: url("/images/back-3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+}
+
+#databack4 {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-items: center;
+  background-image: url("/images/back-4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+}
+
+#databack5 {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-items: center;
+  background-image: url("/images/back-5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+}
+
+#greenarrow {
+  width: 20px;
+  height: 20px;
+}
+
+#databelow {
+  color: var(--white-100, #fff);
+  font-family: Outfit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 233.333% */
+  letter-spacing: -0.108px;
+}
